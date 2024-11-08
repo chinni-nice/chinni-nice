@@ -1,0 +1,13 @@
+word = "Horses are truly remarkable creatures. Their strength, grace, and intelligence make them stand out in the animal kingdom. Beyond their physical attributes, horses have a unique ability to connect with humans, offering companionship and support. Their diverse roles in various cultures, from work to sport, showcase their versatility and importance in our lives."
+
+l = word.split() #splits input into words
+d = {} #dictionary to store the words
+
+for i in l: #iterate through words & stores every word as a key in the dictionary as a value
+    if i not in d.keys(): #checks if it is in dictionary
+        d[i] = 0 #stores every key as 0, then adds when we see it
+    d[i] = d[i]+1 #current value plus additon
+
+#dont know how to lower
+
+print(d) #prints :P
